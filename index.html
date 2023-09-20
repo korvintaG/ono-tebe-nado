@@ -27,29 +27,29 @@
       <div class="header__logo">
         <a>
           <img
-            alt="Логотип - Оно тебе надо"
+            alt="Надпись черного цвета - Оно тебе надо - вписанная в черный квадрат."
             class="header__logo-image"
             src="./images/logo-black.svg"
           />
         </a>
       </div>
-      <div class="address header__address">
+      <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br />
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
-        <address>наб. Принсенграхт 263-265, Амстердам</address>
-      </div>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="cover">
         <div class="overlay">
           <h1 class="cover__title">
-            <span class="cover__title_text_left"
+            <span class="cover__title_text cover__title_text_left"
               >о<span class="letter-spacing-extended">но</span></span
             >
-            <span class="cover__title_text_center"
+            <span class="cover__title_text aligned-text_center"
               >те<span class="letter-spacing-extended">бе</span></span
             >
-            <span class="cover__title_text_right"
+            <span class="cover__title_text aligned-text_right"
               ><span class="letter-spacing-extended">н</span>ад<span
                 class="no-letter-spacing"
                 >о</span
@@ -57,10 +57,18 @@
             >
           </h1>
           <div class="cover__description">
-            <div class="cover__description-text">
+            <p class="cover__description-text">
               Аукцион вещей, в которые никто
+              <!-- Ниже нужен span с особым стилем , т.к. в оригинальном макете на Figma последние слова разделяют 5,
+                   а не 4 пробела, как в остальном предложении. Конкретней, в Figma идет такой текст:
+                   "Аукцион    вещей,    в    которые    никто    не     верил"
+                   а не такой:
+                   "Аукцион    вещей,    в    которые    никто    не    верил"
+                   Потому word_spacing здесь нужен иной, чем для остального текста.
+                   См. макет https://www.figma.com/file/unBuocGdAfnegz1sE0MknV/%232-%D0%9E%D0%BD%D0%BE-%D1%82%D0%B5%D0%B1%D0%B5-%D0%BD%D0%B0%D0%B4%D0%BE/duplicate
+              -->
               <span class="cover__description-text_extended">не верил</span>
-            </div>
+            </p>
             <button class="bet-button">Сделать ставку</button>
           </div>
         </div>
@@ -129,7 +137,7 @@
           <img
             class="about__logo-image"
             src="./images/logo-white.svg"
-            alt="Логотип - Оно тебе надо"
+            alt="Надпись белого цвета - Оно тебе надо - вписанная в белый квадрат на черном фоне."
           />
         </div>
         <div>
@@ -156,11 +164,11 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="address">
-        <a href="tel:+99995555555">+9 999 555 5555</a>
+      <address class="address">
+        <a href="tel:+99995555555">+9 999 555 5555</a><br />
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address>наб. Принсенграхт 263-265, Амстердам</address>
-      </div>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li><a class="footer__menu-link_active" href="#0">главная</a></li>
@@ -170,27 +178,27 @@
       </nav>
       <ul class="footer__social-list">
         <li>
-          <a href="#0">
+          <a href="#0" title="Переход на Youtube">
             <img
-              alt="Иконка Youtube"
+              alt="Иконка Youtube."
               class="footer__social-icon"
               src="./images/yt.svg"
             />
           </a>
         </li>
         <li>
-          <a href="#0">
+          <a href="#0" title="Переход на социальную сеть ВКонтакте">
             <img
-              alt="Иконка VK"
+              alt="Иконка ВКонтакте."
               class="footer__social-icon"
               src="./images/vk.svg"
             />
           </a>
         </li>
         <li>
-          <a href="#0">
+          <a href="#0" title="Переход на Pinterest">
             <img
-              alt="Иконка pinterest"
+              alt="Иконка Pinterest."
               class="footer__social-icon"
               src="./images/pinterest.svg"
             />

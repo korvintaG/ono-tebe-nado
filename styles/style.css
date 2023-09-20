@@ -75,20 +75,20 @@
   text-transform: uppercase;
 }
 
-.cover__title_text_left {
+.cover__title_text {
   display: block;
+  line-height: 1;
+}
+
+.cover__title_text_left {
   line-height: 1.15;
 }
 
-.cover__title_text_center {
-  display: block;
-  line-height: 1;
+.aligned-text_center {
   text-align: center;
 }
 
-.cover__title_text_right {
-  display: block;
-  line-height: 1;
+.aligned-text_right {
   text-align: right;
 }
 
@@ -111,7 +111,6 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 1.27273;
-  text-align: center;
   text-transform: uppercase;
   word-spacing: 17px;
   white-space: nowrap;
@@ -127,6 +126,7 @@
   border: 1px solid #fff;
   padding: 12px 32px;
   color: #fff;
+  font-family: Raleway, Arial, sans-serif; /* нужно для FireFox, который почему то не подхватывает шрифт из Body для кнопок */
   font-weight: normal;
   font-size: 22px;
   line-height: normal;
@@ -163,6 +163,7 @@
 .lots__card-list-item {
   flex-grow: 1;
   width: 430px;
+  min-height: 450px;
 }
 
 .card_link {
@@ -173,8 +174,8 @@
 
 .card {
   height: 100%;
-  min-height: 450px;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
